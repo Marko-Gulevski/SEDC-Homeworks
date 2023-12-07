@@ -1,0 +1,38 @@
+@font-face {
+    font-family: "s'Awesome";
+    src: url(./assets/SAWesome.ttf);
+}
+
+body {
+    background: url(./images/gameover3.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+a {
+    align-items: center;
+}
+
+div {
+    margin: 0;
+    position: absolute;
+    top: 60%;
+    right: 45%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+
+}
+
+button {
+    width: 250px;
+    height: 100px;
+    background-color: white;
+    border-radius: 25px;
+    font-size: 25px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: crimson;
+    font-family: "s'Awesome";
+}

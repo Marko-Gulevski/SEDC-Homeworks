@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAW Game | Final Puzzle</title>
+    <link rel="stylesheet" href="finalPuzzleStyle.css">
+</head>
+
+<body>
+    <audio src="./sounds/Saw Theme Song- Hello Zepp.mp3" autoplay loop></audio>
+    <header>
+        <a href="./startPage.html"><img src="./images/spiralHome.jpg" alt="" width="100"></a>
+    </header>
+    <hr>
+    <main>
+        <h1>PLAY ME</h1>
+        <div id="puzzleTape3">
+            <button id="puzzleButtonThree" onclick="beginPuzzle3.play()"><img src="./images/result.png" alt=""
+                    width="100"></button>
+        </div>
+        <div id="puzzleThreeText">
+
+        </div>
+
+
+        <div class="puzzleContainer">
+            <div class="hangmanBox">
+                <img src="./images/hangman-0.svg" alt="">
+            </div>
+            <div class="puzzleBox">
+                <ul class="wordDisplay"></ul>
+                <h4>Who is PsyMaki?</h4>
+                <h4 class="guessesLeft">Incorrect guesses:
+                    <b>0 / 6</b>
+                </h4>
+                <div class="keyboardWithLetters"></div>
+            </div>
+            <div class="countdownOutline">
+                <p id="countdownTimer"></p>
+            </div>
+        </div>
+        <footer>
+            <div class="footerRights">Copyright &copy; Reserved 2023; Designed by <span class="designer">PsyMaki</span>
+            </div>
+        </footer>
+    </main>
+    <script src="scriptFinalPuzzle.js"></script>
+</body>
+
+</html>

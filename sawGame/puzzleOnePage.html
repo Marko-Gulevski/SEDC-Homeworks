@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAW Game | First Steps</title>
+    <link rel="stylesheet" href="puzzleOneStyle.css">
+</head>
+
+<body>
+    <audio src="./sounds/Saw Theme Song- Hello Zepp.mp3" autoplay loop></audio>
+    <header>
+        <a href="./startPage.html"><img src="./images/spiralHome.jpg" alt="" width="100"></a>
+    </header>
+    <hr>
+    <main>
+        <h1>PLAY ME</h1>
+        <div id="puzzleTape1">
+            <button id="puzzleButtonOne" onclick="beginPuzzle1.play()"><img src="./images/result.png" alt=""
+                    width="100"></button>
+        </div>
+        <div id="puzzleOneText">
+
+        </div>
+        <div id="puzzleContainer">
+            <div id="guessBox">
+                <p id="guessText">Guess the Percentile between 1-100</p>
+                <input type="text" id="userInput">
+                <button id="guessButton">Guess</button>
+                <div class="countdownOutline">
+                    <p id="countdownTimer"></p>
+                </div>
+            </div>
+            <p id="findNumber1">7</p>
+            <p id="findNumber2">0</p>
+
+            <footer>
+                <div class="footerRights">Copyright &copy; Reserved 2023; Designed by <span
+                        class="designer">PsyMaki</span>
+                </div>
+            </footer>
+
+    </main>
+
+    <script src="scriptPuzzleOne.js"></script>
+</body>
+
+</html>

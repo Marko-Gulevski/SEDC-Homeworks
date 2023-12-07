@@ -1,0 +1,186 @@
+@font-face {
+    font-family: "s'Awesome";
+    src: url(./assets/SAWesome.ttf);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    flex: 1 1 auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    background-color: black;
+}
+
+body {
+    background-color: #121213;
+}
+
+h1 {
+    text-decoration: double underline;
+    text-align: center;
+    margin-top: 200px;
+    font-size: 46px;
+    color: crimson;
+    font-family: "s'Awesome";
+}
+
+#puzzleTape3 {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+#puzzleThreeText {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    margin: 15px;
+    margin-top: 25px;
+    margin-bottom: 35px;
+    color: crimson;
+    font-size: 40px;
+
+}
+
+.countdownOutline {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    flex-wrap: nowrap;
+    justify-content: first baseline;
+    align-items: center;
+}
+
+#countdownTimer {
+    border: 1px solid black;
+    color: #121213;
+    font-size: 28px;
+    width: 95px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    display: flex;
+    flex: 1 1 auto;
+    flex-wrap: wrap;
+    border-right: 0px;
+    border-top: 0px;
+    font-family: "s'Awesome";
+    cursor: none;
+}
+
+.puzzleContainer {
+    display: flex;
+    background-color: crimson;
+    gap: 70px;
+    height: 500px;
+    width: 850px;
+    padding: 60px 40px;
+    border-radius: 10px;
+    margin: auto;
+}
+
+.wordDisplay {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.wordDisplay .letter {
+    width: 28px;
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-bottom: 3px solid #000;
+    margin-bottom: 40px;
+    font-family: "s'Awesome";
+}
+
+.puzzleBox h4 {
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.puzzleBox h4 b {
+    font-weight: 600;
+}
+
+.puzzleBox .guessesLeft b {
+    color: black;
+}
+
+.puzzleBox .keyboardWithLetters {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.keyboardWithLetters button {
+    width: calc(100% / 9 - 5px);
+    color: red;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    background: #121213;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    padding: 7px;
+    font-family: "s'Awesome";
+}
+
+.keyboardWithLetters button[disabled] {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.keyboardWithLetters button:hover {
+    background: lightblue;
+}
+
+@media (max-width: 782px) {
+    .puzzleContainer {
+        flex-direction: column;
+        padding: 30px 15px;
+        align-items: center;
+    }
+
+    .hangmanBox img {
+        max-width: 200px;
+    }
+}
+
+footer {
+    width: 100%;
+    margin-top: 100px;
+    justify-content: center;
+    background-color: black;
+    color: crimson;
+    position: absolute;
+    display: flex;
+    height: 100px;
+}
+
+.footerRights {
+    text-align: center;
+    margin: 20px;
+}
+
+.designer {
+    font-family: "s'Awesome";
+}
