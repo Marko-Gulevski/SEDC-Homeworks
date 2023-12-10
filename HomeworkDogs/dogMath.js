@@ -13,7 +13,7 @@ function converterCollies() {
         case "Dog years to human years":
             let enterDogYears = prompt("Enter Dog years");
             let convertDogToHuman = Math.floor(enterDogYears / borderCollieRatio);
-            console.log(`${enterDogYears} dog years is equal to ${convertDogToHuman} human years`);
+            alert(`${enterDogYears} dog years is equal to ${convertDogToHuman} human years`);
             return;
         default:
             alert(`You have not entered any amount of years`);
