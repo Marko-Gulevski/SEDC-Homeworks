@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play Hangman | Cartoons</title>
+    <link rel="stylesheet" href="styleCartoons.css">
+</head>
+
+<body>
+    <header>
+        <h1>GUESS THE CARTOON</h1>
+        <a href="../Hangman Homepage/index.html">Home</a>
+    </header>
+
+    <div id="hangmanContainer">
+        <div id="hangmanBox">
+            <img src="../Hangman Images/hangman-0.svg" alt="A picture of a hangman" draggable="false">
+        </div>
+        <div id="gameBox">
+            <ul id="wordDisplay">
+
+            </ul>
+            <h4 class="hintText">Hint: <b></b></h4>
+            <h4 class="guessesLeft">Incorrect Guesses: <b> 0 / 6</b></h4>
+        </div>
+    </div>
+    <div id="keyboardWithLetters">
+    </div>
+
+    <script src="scriptCartoons.js" type="module"></script>
+</body>
+
+</html>

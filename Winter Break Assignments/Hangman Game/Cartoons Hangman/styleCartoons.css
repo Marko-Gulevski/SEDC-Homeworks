@@ -1,0 +1,135 @@
+@font-face {
+    font-family: "Grinched";
+    src: url(../Fonts\ Folder/GrinchedRegular.otf);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 2rem;
+    color: #59C9A5;
+    background-color: black;
+    width: 1150px;
+    margin: auto;
+    font-family: "Grinched";
+}
+
+body {
+    background-color: #23395B;
+}
+
+#hangmanContainer {
+    display: flex;
+    background-color: #FFFD98;
+    gap: 70px;
+    min-height: 650px;
+    width: 1150px;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+#hangmanBox img {
+    max-width: 250px;
+}
+
+#wordDisplay {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style: none;
+    width: 100%;
+    min-height: 400px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    white-space: pre-wrap;
+}
+
+.letters,
+.space {
+    display: inline-block;
+}
+
+
+#wordDisplay .letters {
+    width: 28px;
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-bottom: 3px solid black;
+    margin-bottom: 40px;
+}
+
+#wordDisplay .letters.guessed {
+    border-color: transparent;
+    margin: -40px 0 35px;
+}
+
+#gameBox h4 {
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+#gameBox h4 b {
+    font-weight: 600;
+}
+
+#gameBox .guessesLeft b {
+    color: red;
+}
+
+#keyboardWithLetters {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 650px;
+}
+
+#keyboardWithLetters button {
+    width: 55px;
+    height: 55px;
+    color: #23395B;
+    cursor: pointer;
+    outline: none;
+    padding: 7px;
+    border: none;
+    background-color: #59C9A5;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+#keyboardWithLetters button:hover {
+    background-color: #5f91dd;
+}
+
+#keyboardWithLetters button[disabled] {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+@media (max-width:782px) {
+    #gameContainer {
+        flex-direction: column;
+        padding: 30px 15px;
+        align-items: center;
+    }
+
+    #hangmanBox img {
+        max-width: 200px;
+    }
+}
