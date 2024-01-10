@@ -42,27 +42,27 @@ const moviesList = [{
 },
 {
     word: "the dark knight",
-    hint: ""
+    hint: "Christopher Nolan's take on an icon"
 },
 {
     word: "the godfather",
-    hint: ""
+    hint: "Marlon Brando"
 },
 {
     word: "inception",
-    hint: ""
+    hint: "Dreams within dreams"
 },
 {
     word: "the matrix",
-    hint: ""
+    hint: "Red Pill"
 },
 {
     word: "back to the future",
-    hint: ""
+    hint: "Rick and Morty inspiration"
 },
 {
     word: "the departed",
-    hint: ""
+    hint: "Everybody is a snitch"
 },
 {
     word: "the shining",

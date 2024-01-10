@@ -55,7 +55,7 @@ const singersList = [
     },
     {
         word: "adam levine",
-        hint: ""
+        hint: "His love has taken a toll on him"
     },
     {
         word: "jason derulo",
