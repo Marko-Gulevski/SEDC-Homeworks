@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "Inter Thin";
+    src: url(./assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -7,6 +12,7 @@
 body {
     background-color: #1C2936;
     color: white;
+    font-family: "Inter Thin";
 }
 
 h2 {
@@ -25,24 +31,42 @@ h2 {
 }
 
 .loopType h6 {
-    color: orange;
+    color: #2ac0a0;
     font-size: 40px;
 }
 
 .auto-type {
-    color: orange;
+    color: #2ac0a0;
 }
 
-#carouselAutoplay {
+#carouselExampleFade {
     height: 100vh;
+    width: 100%;
 }
 
 #carouselPictures {
     display: flex;
+    height: 45rem;
+    width: 70%;
     justify-content: center;
     align-content: center;
-    width: 70rem;
-    height: 45rem;
+    margin: auto;
+}
+
+.carousel-control-next {
+    height: 2rem;
+    width: 2rem;
+    background-color: silver;
+    margin-top: 22rem;
+    margin-right: 10rem;
+}
+
+.carousel-control-prev {
+    height: 2rem;
+    width: 2rem;
+    background-color: silver;
+    margin-top: 22rem;
+    margin-left: 10rem;
 }
 
 #trendingWinnersAndLosers {
@@ -64,6 +88,9 @@ h2 {
     text-align: center;
     border-radius: 10%;
     margin-left: 5%;
+    border-right: transparent;
+    border-left: transparent;
+    border-top: transparent;
 }
 
 .trendingWinners td {
@@ -78,7 +105,7 @@ h2 {
     font-size: 28px;
     padding-right: 2px;
     padding-left: 2px;
-    background-color: #1C2936;
+    background-color: #2ac0a0;
     color: white;
 }
 
@@ -92,14 +119,17 @@ h2 {
     padding: 15px;
     text-align: center;
     margin-right: 5%;
+    border-right: transparent;
+    border-left: transparent;
+    border-top: transparent;
 }
 
-.green-bg {
-    background-color: rgb(8, 78, 8);
+.green-text {
+    color: rgb(50, 129, 50);
 }
 
-.red-bg {
-    background-color: rgb(192, 8, 45);
+.red-text {
+    color: rgb(192, 8, 45);
 }
 
 #ourPartners {
@@ -191,6 +221,21 @@ span.text {
 .reveal.active {
     transform: translateY(0px);
     opacity: 1;
+}
+
+footer {
+    background-color: black;
+    display: flex;
+    height: 150px;
+    align-content: center;
+    justify-content: space-around;
+    font-size: 25px;
+    position: absolute;
+    width: 100%;
+}
+
+footer p {
+    font-size: 14px;
 }
 
 @media screen and (max-width: 768px) {
